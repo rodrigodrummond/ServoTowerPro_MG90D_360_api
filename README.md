@@ -8,6 +8,8 @@ The API contains functions to control a Servomotor Tower Pro MG90D. This hobby s
 
 This API was developed and tested with the STM32-NUCLEO-F103RB board.
 
+![title](Images/servo_tower_pro_mg90d.jpg)
+
 ## Functions and objects:
 ### struct Servo
 This is a struct that contains the timer and channel associated with the servo, the period of the PWM signal, in clock cycles, and the actual pulse width of the signal, in clock cycles. 
@@ -57,5 +59,7 @@ To generate a 50Hz signal, we first need to choose a clock frequency for the tim
 Now we need to configure the TIM3 timer. Go to **Pinout & Configuration**>**Timers**>**TIM3**, in **Mode**, select the Channel2 *PWM Generation CH2*. In **Configuration**, select the **Parameter Settings** tab. The counter period is the number of clock cycles counted per period. For a 62500Hz clock, we need to count 1250 times each 20ms, that is, the Counter Period is determined by dividing the Clock Frequency by the target frequency. So, we choose a **Counter Period** of 1250. For the pulse width, we choose the Zero Speed duty cycle, equivalent to 94 clock cycles.
 
 ![title](Images/guia5.png) ![title](Images/guia6.png) 
-![title](Images/guia7.png) 
 
+                           ![title](Images/guia7.png) 
+
+After this, you can name your project and generate code.
