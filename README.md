@@ -42,3 +42,20 @@ First, you need to create a new project from a ST board
 
 ![title](Images/guia1.png)
 
+Then, choose a board and create the project. This API was designed with the STM32-NUCLEO-F103RB.
+
+![title](Images/guia2.png)
+
+First, we need to choose a timer and the channel to use the PWM signal. In this example, we chose the timer TIM3 and channel CH2, located on pin PC7, as seen in the figure bellow.
+
+![title](Images/guia4.png)
+
+To generate a 50Hz signal, we first need to choose a clock frequency for the timer and a Counter Period. The desired clock can be obtained by changing the values of the prescalers at the clock tree in the Clock Configuration Tab. In this example, we changed the timer clock to 0.0625MHz.
+
+![title](Images/clock_config.png)
+
+Now we need to configure the TIM3 timer. Go to **Pinout & Configuration**>**Timers**>**TIM3**, in **Mode**, select the Channel2 *PWM Generation CH2*. In **Configuration**, select the **Parameter Settings** tab. The counter period is the number of clock cycles counted per period. For a 62500Hz clock, we need to count 1250 times each 20ms, that is, the Counter Period is determined by dividing the Clock Frequency by the target frequency. So, we choose a **Counter Period** of 1250. For the pulse width, we choose the Zero Speed duty cycle, equivalent to 94 clock cycles.
+
+![title](Images/guia5.png) ![title](Images/guia6.png) 
+![title](Images/guia7.png) 
+
