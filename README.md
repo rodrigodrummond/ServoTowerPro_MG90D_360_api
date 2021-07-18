@@ -37,3 +37,8 @@ Max. Clockwise | 0.0375 | 0.75 ms
 Zero | 0.075 | 1.5 ms
 Max. Counterclockwise | 0.1125 | 2.25 ms
 
+### STMCubeMX configuration
+First, you need to create a new project from a ST board
+
+![title](Images/guia1.png)
+
