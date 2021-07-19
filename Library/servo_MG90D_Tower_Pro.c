@@ -3,6 +3,8 @@
  *
  *  Created on: 17 de jul de 2021
  *      Author: Rodrigo Drummond Lima
+ *      Federal University of Minas Gerais (UFMG) - Brazil
+ *      MIT Licence
  *  Version 1.0 - API with the following functions:
     Servo initServo(TIM_HandleTypeDef timer, uint32_t channel, uint16_t period);
     void setPWM(TIM_HandleTypeDef timer, uint32_t channel, uint16_t period, uint16_t pulse);
@@ -15,6 +17,10 @@
     This API implements a series of functions to control the
     Servo Motor MG90D Tower Pro 360° with the STM32 NUCLEO F103RB.
     Feel free to use, modify and adapt this API.
+
+    This API was developed as a project for the Embedded Systems Programming
+    course at the Federal University of Minas Gerais (UFMG) in July 2021,
+    with professor Ricardo de Oliveira Duarte - Department of Electronic Engineering.
  */
 
 #include "servo_MG90D_Tower_Pro.h"

@@ -72,3 +72,6 @@ Orange | PWM signal | PC7 (CN10(Pin 19) or CN5(Pin 2))
 ![title](Images/pinout.gif)
 
 In the directory **Servo_test**, there is a test program that uses all functions in this API.
+
+## References
+- Servo motor Tower Pro MG90D information: <https://www.towerpro.com.tw/product/mg90d-2/>

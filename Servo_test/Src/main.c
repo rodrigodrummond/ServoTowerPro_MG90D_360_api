@@ -1,5 +1,6 @@
 /* USER CODE BEGIN Header */
 /** Author: Rodrigo Drummond Lima
+ * Federal University of Minas Gerais (UFMG)
   ******************************************************************************
   * @file           : main.c
   * @brief          : Test program for the API
