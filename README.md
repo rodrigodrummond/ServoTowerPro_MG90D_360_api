@@ -14,11 +14,8 @@ This API was developed and tested with the STM32-NUCLEO-F103RB board.
 ### struct Servo
 This is a struct that contains the timer and channel associated with the servo, the period of the PWM signal, in clock cycles, and the actual pulse width of the signal, in clock cycles. 
 
-### void setPWM(TIM_HandleTypeDef timer, uint32_t channel, uint16_t period, uint16_t pulse);
-This is a function made by professor Ricardo de Oliveira Duarte that initializes the PWM generation at the corresponding timer and channel with the specified period and pulse width, both in clock cycles.
-
 ### Servo initServo(TIM_HandleTypeDef timer, uint32_t channel, uint16_t period);
-This function initializes the servo motor with the desired specifications and returns an object with those features.
+This function initializes the servo motor with the desired specifications and returns an object with those features. Make sure to put the Counter Period you calculated in **uint16_t period** field. 
 
 ### void setClockwiseSpeed(Servo S, float percent_speed);
 This function makes the motor rotate clockwise with the desired percentage speed, relative to the nominal maximum speed. This function caps the speed at 110% to prevent damage to the motor.
