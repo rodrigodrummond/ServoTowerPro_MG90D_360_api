@@ -1,8 +1,20 @@
 /*
- * servo_MG90D_Tower_Pro.c
+ * servo_MG90D_Tower_Pro.h
  *
  *  Created on: 17 de jul de 2021
- *      Author: RodrigoDrummond
+ *      Author: Rodrigo Drummond Lima
+ *  Version 1.0 - API with the following functions:
+    Servo initServo(TIM_HandleTypeDef timer, uint32_t channel, uint16_t period);
+    void setPWM(TIM_HandleTypeDef timer, uint32_t channel, uint16_t period, uint16_t pulse);
+    void setClockwiseSpeed(Servo S, float percent_speed);
+    void setCounterClockwiseSpeed(Servo S, float percent_speed);
+    void stopServo(Servo S);
+
+    Function setPWM is designed by professor Ricardo de Oliveira Duarte.
+
+    This API implements a series of functions to control the
+    Servo Motor MG90D Tower Pro 360° with the STM32 NUCLEO F103RB.
+    Feel free to use, modify and adapt this API.
  */
 
 #include "servo_MG90D_Tower_Pro.h"

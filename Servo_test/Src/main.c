@@ -1,8 +1,8 @@
 /* USER CODE BEGIN Header */
-/**
+/** Author: Rodrigo Drummond Lima
   ******************************************************************************
   * @file           : main.c
-  * @brief          : Main program body
+  * @brief          : Test program for the API
   ******************************************************************************
   * @attention
   *
@@ -89,6 +89,7 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_TIM3_Init();
+
   /* USER CODE BEGIN 2 */
   Servo S1 = initServo(htim3, TIM_CHANNEL_2, 1250);
   /* USER CODE END 2 */
