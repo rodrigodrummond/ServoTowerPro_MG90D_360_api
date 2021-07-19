@@ -63,3 +63,13 @@ Now we need to configure the TIM3 timer. Go to **Pinout & Configuration**>**Time
 ![title](Images/guia7.png) 
 
 After this, you can name your project and generate code.
+
+### Pinout
+
+Wire Color | Resourse | Pin 
+------------ | ------------- | ------------- 
+Brown | GND | CN10(Pin 20) or CN6(Pin 6) 
+Red | 5V supply | CN7(Pin 18) or CN6(Pin 5)  
+Orange | PWM signal | PC7 (CN10(Pin 19) or CN5(Pin 2)) 
+
+![](Images/pinout.gif)
