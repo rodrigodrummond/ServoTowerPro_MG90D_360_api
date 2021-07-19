@@ -73,3 +73,5 @@ Red | 5V supply | CN7(Pin 18) or CN6(Pin 5)
 Orange | PWM signal | PC7 (CN10(Pin 19) or CN5(Pin 2)) 
 
 ![title](Images/pinout.gif)
+
+In the directory **Servo_test**, there is a test program that uses all functions in this API.
