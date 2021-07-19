@@ -75,3 +75,5 @@ In the directory **Servo_test**, there is a test program that uses all functions
 
 ## References
 - Servo motor Tower Pro MG90D information: <https://www.towerpro.com.tw/product/mg90d-2/>
+- UM1724 - STM32 Nucleo-64 board
+- RM0008 - Reference Manual STM32F103xx
