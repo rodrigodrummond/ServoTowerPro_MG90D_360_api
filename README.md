@@ -60,6 +60,6 @@ Now we need to configure the TIM3 timer. Go to **Pinout & Configuration**>**Time
 
 ![title](Images/guia5.png) ![title](Images/guia6.png) 
 
-                           ![title](Images/guia7.png) 
+![title](Images/guia7.png) 
 
 After this, you can name your project and generate code.
